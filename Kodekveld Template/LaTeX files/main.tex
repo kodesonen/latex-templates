@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{setspace}
+\usepackage{xcolor}
+\usepackage{style}
+
+\title{
+    \textbf{Oppgavesett X}\\
+    Kodekveld dd.mm.year\\[1.5cm]
+    \textbf{USN Kongsberg}\\
+    Revisjon 1.0
+}
+\author{kodesonen.no}
+\date{}
+
+\begin{document}
+\pagenumbering{gobble}
+\vspace*{1.5cm}
+\begin{center}\includegraphics[width=15cm]{img/essential/logo.png}\end{center}
+{\let\newpage\relax\maketitle}
+\newpage
+\pagenumbering{arabic}
+\renewcommand{\contentsname}{Innholdsfortegnelse}
+\tableofcontents\newpage
+
+\include{description}
+
+\include{tasks/level1}
+\include{tasks/level2}
+
+\end{document}
